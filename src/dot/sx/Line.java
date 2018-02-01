@@ -1,5 +1,8 @@
 package dot.sx;
 
+/**
+ * @author rob3ns
+ */
 public class Line {
 
 	private Dot start;

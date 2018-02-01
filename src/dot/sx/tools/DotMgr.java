@@ -5,6 +5,9 @@ import java.util.List;
 import dot.sx.Dot;
 import utils.Caster;
 
+/**
+ * @author rob3ns
+ */
 public final class DotMgr {
 
 	public final static boolean setFirstDot(List<Dot> dots, int dotIndex) {
