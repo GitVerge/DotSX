@@ -1,7 +1,5 @@
 package dot.sx;
 
-import java.util.Comparator;
-
 public class Line {
 
 	private Dot start;
