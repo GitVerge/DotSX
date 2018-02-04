@@ -52,6 +52,7 @@ public final class LineMgr {
         newList.add(l);
       }
     }
+
     list.clear();
     list.addAll(newList);
   }
@@ -62,6 +63,13 @@ public final class LineMgr {
 			if (l.isValid() && !l.containsLast()) {
 				l.activate();
 				activeLines.add(l);
+			}
+		}
+
+		for (Line l : lines) {
+			if (l.containsLast() && l.isValid()) {
+				activeLines.add(l);
+				return activeLines;
 			}
 		}
 		
