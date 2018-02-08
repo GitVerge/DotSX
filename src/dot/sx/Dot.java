@@ -30,6 +30,10 @@ public class Dot {
 		return "Dot [x=" + x + ", y=" + y + ", connections=" + connections + ", first=" + first + ", last=" + last
 				+ "]";
 	}
+	
+	public Double[] toArray() {
+		return new Double[]{x, y};
+	}
 
 	@Override
 	public int hashCode() {
