@@ -15,7 +15,7 @@ public final class DotMgr {
 	private final static int POS_Y = 1;
 
 	public final static boolean setFirstDot(List<Dot> dots, Integer dotIndex) {
-		if (Caster.isValidCollection(dots, dotIndex) && dotIndex != null) {
+		if (dotIndex != null && Caster.isValidCollection(dots, dotIndex)) {
 			dots.get(dotIndex).setFirst(true);
 			return true;
 		}
@@ -23,7 +23,7 @@ public final class DotMgr {
 	}
 
 	public final static boolean setLastDot(List<Dot> dots, Integer dotIndex) {
-		if (Caster.isValidCollection(dots, dotIndex) && dotIndex != null) {
+		if (dotIndex != null && Caster.isValidCollection(dots, dotIndex)) {
 			dots.get(dotIndex).setLast(true);
 			return true;
 		}
