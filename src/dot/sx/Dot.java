@@ -5,11 +5,11 @@ package dot.sx;
  */
 public class Dot {
 
-	private double x;
-	private double y;
-	private int connections;
-	private boolean first;
-	private boolean last;
+	private Double x;
+	private Double y;
+	private int connections = 0;
+	private boolean first = false;
+	private boolean last = false;
 
 	public Dot(double x, double y) {
 		this.x = x;
@@ -66,6 +66,9 @@ public class Dot {
 	public double getX() {
 		return x;
 	}
+	public int getIntX() {
+		return x.intValue();
+	}
 	
 	public void setX(double x) {
 		this.x = x;
@@ -73,6 +76,9 @@ public class Dot {
 	
 	public double getY() {
 		return y;
+	}
+	public int getIntY() {
+		return y.intValue();
 	}
 	
 	public void setY(double y) {

@@ -67,9 +67,14 @@ public final class LineMgr {
 			}
 		}
 
+
 		for (Line l : lines) {
 			if (l.containsLast() && l.isValid()) {
 				activeLines.add(l);
+				for (Line ll : lines) {
+					System.out.println("active start " + ll.getStart().getConnections());
+					System.out.println("active end " + ll.getEnd().getConnections());
+				}
 				return activeLines;
 			}
 		}
